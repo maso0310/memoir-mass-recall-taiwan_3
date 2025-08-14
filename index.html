@@ -33,7 +33,7 @@
         default-src 'self';
         base-uri 'self';
         object-src 'none';
-        script-src 'self' https://unpkg.com 'nonce-7a42402a-58a8-4cc5-87e4-9b6e7af5535c';
+        script-src 'self' https://unpkg.com 'nonce-11811d7b-2e27-4403-80fe-8a0360d1c2af';
         style-src 'self' 'unsafe-inline';
         img-src 'self' data: https://img.youtube.com https://i.ytimg.com;
         font-src 'self' data:;
@@ -48,7 +48,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
 
     <!-- External Libraries -->
-    <script src="https://unpkg.com/lucide@latest" nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c"></script>
+    <script src="https://unpkg.com/lucide@latest" nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -287,7 +287,7 @@
     </div>
     </div>
 
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         (() => {
             const q = (n) => document.querySelector(n);
             const BACKEND      = q('meta[name="backend-url"]')?.content || '';
@@ -385,7 +385,7 @@
     </script>
 
     <!-- ✅ 放在 audit/核可程式之後、
-        <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+        <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         // 🔐 MemoirFlow 統一前端解密系統 - 修正版本
         (function() {
             'use strict';
@@ -696,7 +696,7 @@
         })();
         </script>
          之前 -->
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         let _autoDecryptImpl, _decryptWithPwdImpl;
 
         Object.defineProperty(window, 'autoDecrypt', {
@@ -726,7 +726,7 @@
 
     <!-- 🔐 解密腳本注入點 - 關鍵！這是解密腳本的注入位置 -->
     
-        <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+        <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         // 🔐 MemoirFlow 統一前端解密系統 - 修正版本
         (function() {
             'use strict';
@@ -1039,7 +1039,7 @@
         
 
     <!-- 安全性增強腳本 -->
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         // 🔐 防止右鍵選單和常見快捷鍵
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -1282,14 +1282,14 @@
     </div>
 
     <!-- 數據注入點 -->
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         // 🔐 加密模式：數據將透過解密腳本載入
         console.log('🔐 加密模式初始化');
         window.MEMOIR_DATA = null; // 將由解密腳本設定
         </script>
 
     <!-- 主要腳本 -->
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         (function() {
             'use strict';
             
@@ -3358,11 +3358,11 @@
     </script>
     
     <!-- 版權聲明 -->
-    <script nonce="7a42402a-58a8-4cc5-87e4-9b6e7af5535c">
+    <script nonce="11811d7b-2e27-4403-80fe-8a0360d1c2af">
         // 綁定重新載入
         document.getElementById('retryBtn')?.addEventListener('click', () => location.reload());
 
-        console.log('%c🔒 生成時間: 2025-08-14T11:30:08.192259400+00:00', 'color: #6b7280; font-size: 10px;');
+        console.log('%c🔒 生成時間: 2025-08-14T11:32:38.916178900+00:00', 'color: #6b7280; font-size: 10px;');
         console.log('%c🔐 版權所有 © MemoirFlow (加密版)', 'color: #6b7280; font-size: 10px;');
         console.log('%c🛡️ 此內容受 AES-256-GCM 加密保護', 'color: #10b981; font-size: 10px;');
     </script>
