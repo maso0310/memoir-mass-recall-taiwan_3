@@ -30,18 +30,17 @@
     <meta name="approval-required" content="true">
 
     <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        base-uri 'self';
-        object-src 'none';
-        script-src 'self' https://unpkg.com 'nonce-{{NONCE}}';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https://img.youtube.com https://i.ytimg.com;
-        font-src 'self' data:;
-        connect-src 'self' "https://mastermaso.com/memoirflow";
-        frame-src https://www.youtube.com https://www.youtube-nocookie.com;
-        frame-ancestors 'none';
-        upgrade-insecure-requests;
-        block-all-mixed-content;
+    default-src 'self';
+    base-uri 'self';
+    object-src 'none';
+    script-src 'self' https://unpkg.com 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: https://img.youtube.com https://i.ytimg.com;
+    font-src 'self' data:;
+    connect-src 'self';                          <!-- 若要打 API，改成實際網域或暫時用 https: -->
+    frame-src https://www.youtube.com https://www.youtube-nocookie.com;
+    frame-ancestors 'none';
+    upgrade-insecure-requests; block-all-mixed-content;
     ">
 
     <!-- Favicon -->
@@ -287,7 +286,7 @@
     </div>
     </div>
 
-    <script nonce="{{NONCE}}">
+    <script>
         (() => {
             const q = (n) => document.querySelector(n);
             const BACKEND      = q('meta[name="backend-url"]')?.content || '';
@@ -695,7 +694,7 @@
         })();
         </script>
          之前 -->
-    <script nonce="{{NONCE}}">
+    <script>
         let _autoDecryptImpl, _decryptWithPwdImpl;
 
         Object.defineProperty(window, 'autoDecrypt', {
@@ -1037,7 +1036,7 @@
         
 
     <!-- 安全性增強腳本 -->
-    <script nonce="{{NONCE}}">
+    <script>
         // 🔐 防止右鍵選單和常見快捷鍵
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
@@ -1289,7 +1288,7 @@
             
 
     <!-- 主要腳本 -->
-    <script nonce="{{NONCE}}">
+    <script>
         (function() {
             'use strict';
             
@@ -3358,11 +3357,11 @@
     </script>
     
     <!-- 版權聲明 -->
-    <script nonce="{{NONCE}}">
+    <script>
         // 綁定重新載入
         document.getElementById('retryBtn')?.addEventListener('click', () => location.reload());
 
-        console.log('%c🔒 生成時間: 2025-08-14T10:49:28.269465900+00:00', 'color: #6b7280; font-size: 10px;');
+        console.log('%c🔒 生成時間: 2025-08-14T11:00:23.177464800+00:00', 'color: #6b7280; font-size: 10px;');
         console.log('%c🔐 版權所有 © MemoirFlow (加密版)', 'color: #6b7280; font-size: 10px;');
         console.log('%c🛡️ 此內容受 AES-256-GCM 加密保護', 'color: #10b981; font-size: 10px;');
     </script>
